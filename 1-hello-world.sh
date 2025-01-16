@@ -1,3 +1,3 @@
 #!bin/bash
 echo "hello world!"
-echo "welcomes you, by parthu"
+echo "welcome's you, by parthu"

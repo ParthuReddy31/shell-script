@@ -8,3 +8,4 @@ then
 fi
 
 dnf install mysqld -y
+echo "Mysql is installed"

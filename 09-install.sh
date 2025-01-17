@@ -7,3 +7,4 @@ then
     echo "Error:: to install any package user must be Root "
 else
     dnf install mysqld -y
+fi

@@ -8,7 +8,7 @@ then
     exit 1 #other than zero 0
 fi
 
-dnf install mysqld -y
+dnf install mysql -y
 if [ $? -ne 0 ]
 then
     echo " installing MySQL... FAILURE"

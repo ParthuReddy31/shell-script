@@ -6,6 +6,6 @@ NUMBER1=$1
 if [ $NUMBER1 -gt 100 ]
 then
     echo "the entered number is $NUMBER1 and it's greaterthan 100"
-else 
+else
     echo " the entered number is $NUMBER1 and it's lessthan or Equals 100"
-fi 
+fi

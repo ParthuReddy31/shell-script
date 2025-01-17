@@ -11,5 +11,5 @@ echo "Addition of '$NUMBER1' and '$NUMBER2' is: $SUM "
 echo "Subtraction of '$NUMBER1' and '$NUMBER2' is: $SUB "
 echo "Multiplication of '$NUMBER1' and '$NUMBER2' is: $MULTI "
 
-echo "printing all number that entered: $@"
-echo "printing how many number that entered: $#"
+echo "printing all number that entered: $@" # if you want to print all the numbers that you entered, use " $@ "
+echo "printing how many number that entered: $#" #if you want to print how many numbers that you entered, use " $# " 

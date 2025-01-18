@@ -6,6 +6,6 @@ echo "printing the present working directory: $PWD"
 echo "printing home directory of current user: $HOME"
 echo "which user is running this script: $USER"
 echo "process id of current script: $$ "
-
+echo "$? this is used to find the return value of the last executed command. "
 sleep 60 &
 echo "process id of last command in the background $! "

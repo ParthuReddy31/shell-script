@@ -10,7 +10,7 @@ fi
 R="\e[31m"
 G="\e[32m"
 Y="\e[33m"
-M="\e[34m"
+M="\e[35m"
 
 VALIDATE(){
     if [ $1 -ne 0 ]

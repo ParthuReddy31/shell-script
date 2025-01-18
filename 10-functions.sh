@@ -7,13 +7,18 @@ then
     exit 1 #other than zero 0
 fi
 
+R="\e[31m"
+G="\e[32m"
+Y="\e[33m"
+M="\e[34m"
+
 VALIDATE(){
     if [ $1 -ne 0 ]
     then
-        echo -e "\e[31m  $2 is FAILURE"
+        echo -e "$R  $2 is FAILURE"
         exit 1
     else
-        echo -e "\e[32m $2 is  SUCCESSFUL"
+        echo -e "$G $2 is  SUCCESSFUL"
     fi
 }
 
@@ -23,7 +28,7 @@ if [ $? -ne 0 ]
     dnf install mysql -y
     VALIDATE $? "Installing MySQL"
 else
-    echo -e "\e[32m MySQL is already installed"
+    echo -e "$G MySQL is already installed"
 fi
 
 
@@ -33,5 +38,5 @@ then
     dnf install git -y
     VALIDATE $? "Installing GIT"
 else
-    echo -e "\e[32m Git is already installed"
+    echo -e "$G Git is already installed"
 fi

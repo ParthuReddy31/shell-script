@@ -10,6 +10,7 @@ fi
 R="\e[31m"
 G="\e[32m"
 Y="\e[33m"
+P="\033[0;35m"
 
 
 VALIDATE(){
@@ -44,3 +45,4 @@ fi
 echo -e "$R red"
 echo -e "$Y red"
 echo -e "$G red"
+echo -e "$P red"

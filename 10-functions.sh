@@ -3,14 +3,14 @@
 USERID=$(id -u)
 if [ $USERID -ne 0 ]
 then
-    echo -e "$M Error:: to install any package user must be Root "
+    echo -e "$Y Error:: to install any package user must be Root "
     exit 1 #other than zero 0
 fi
 
 R="\e[31m"
 G="\e[32m"
 Y="\e[33m"
-M='\033[0;35m' 
+M='\033[0;35m'
 
 VALIDATE(){
     if [ $1 -ne 0 ]

@@ -3,17 +3,17 @@
 USERID=$(id -u)
 if [ $USERID -ne 0 ]
 then
-    echo "Error:: to install any package user must be Root "
+    echo -e "\e[33m Error:: to install any package user must be Root "
     exit 1 #other than zero 0
 fi
 
 VALIDATE(){
     if [ $1 -ne 0 ]
     then
-        echo " $2 is FAILURE"
+        echo -e "\e[31m  $2 is FAILURE"
         exit 1
     else
-        echo -e "$2 is '\e[32m SUCCESSFUL'"
+        echo -e "\e[32m $2 is  SUCCESSFUL"
     fi
 }
 
@@ -33,5 +33,5 @@ then
     dnf install git -y
     VALIDATE $? "Installing GIT"
 else
-    echo "Git is already installed"
+    echo "\e[32m Git is already installed"
 fi

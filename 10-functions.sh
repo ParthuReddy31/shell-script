@@ -13,7 +13,7 @@ VALIDATE(){
         echo " $2 is FAILURE"
         exit 1
     else
-        echo "$2 is SUCCESSFUL"
+        echo -e "$2 is '\e[32m SUCCESSFUL'"
     fi
 }
 
@@ -23,7 +23,7 @@ if [ $? -ne 0 ]
     dnf install mysql -y
     VALIDATE $? "Installing MySQL"
 else
-    echo "MySQL is already installed"
+    echo -e "\e[32m MySQL is already installed"
 fi
 
 

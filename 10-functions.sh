@@ -3,7 +3,7 @@
 USERID=$(id -u)
 if [ $USERID -ne 0 ]
 then
-    echo -e "\e[33m Error:: to install any package user must be Root "
+    echo -e "$Y Error:: to install any package user must be Root "
     exit 1 #other than zero 0
 fi
 

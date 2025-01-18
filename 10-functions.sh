@@ -10,7 +10,7 @@ fi
 R="\e[31m"
 G="\e[32m"
 Y="\e[33m"
-M='\033[0;35m'
+
 
 VALIDATE(){
     if [ $1 -ne 0 ]
@@ -40,3 +40,7 @@ then
 else
     echo -e "$G Git is already installed"
 fi
+
+echo -e "$R red"
+echo -e "$Y red"
+echo -e "$G red"

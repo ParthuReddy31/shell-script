@@ -48,7 +48,3 @@ else
     echo -e "$G Git is already installed $N" 
 fi
 
-echo -e "$R red $N"
-echo  " $R r$G e$P d"
-echo -e "$G red"
-echo -e "$P red"'''''

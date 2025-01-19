@@ -32,7 +32,6 @@ else
     echo -e "$G MySQL is already installed  $N"
 fi
 
-
 dnf list installed git
 if [ $? -ne 0 ]
 then
@@ -45,4 +44,4 @@ fi
 echo -e "$R red"
 echo  " red"
 echo -e "$G red"
-echo -e "$P red"
+echo -e "$P red"'''''

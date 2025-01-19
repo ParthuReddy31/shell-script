@@ -7,10 +7,16 @@ N="\e[0m"
 
 USERID=$(id -u)
 
+# LOGS_FOLDER="/var/log/shellscript-logs"
+# LOG_FILE=$(echo $0 | cut -d "." -f1)
+# LOG_TIMESTAMP=$(date +%y-%m-%d)
+# LOG_FILE_NAME="$LOGS_FOLDER/$LOG_FILE-$LOG_TIMESTAMP.log"
+
 LOGS_FOLDER="/var/log/shellscript-logs"
-LOG_FILE= $(echo $0 | cut -d "." -f1)
-LOG_TIMESTAMP=$(date +%y-%m-%d)
-LOG_FILE_NAME="$LOGS_FOLDER/$LOG_FILE-$LOG_TIMESTAMP.log"
+LOG_FILE=$(echo $0 | cut -d "." -f1 )
+TIMESTAMP=$(date +%Y-%m-%d-%H-%M-%S)
+LOG_FILE_NAME="$LOGS_FOLDER/$LOG_FILE-$TIMESTAMP.log"
+
 
 VALIDATE(){
     if [ $1 -ne 0 ]

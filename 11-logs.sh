@@ -13,7 +13,7 @@ Y="\e[33m"
 P="\033[0;35m"
 N="\e[0m"
 
-LOGS_FOLDER="/var/log/shellscript-logs/"
+LOGS_FOLDER="/var/log/shellscript-logs"
 LOG_FILE= $(echo $0 | cut -d "." -f1)
 LOG_TIMESTAMP=$(date +%y-%m-%d)
 LOG_FILE_NAME="$LOGS_FOLDER/$LOG_FILE-$LOG_TIMESTAMP.log"

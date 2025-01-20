@@ -46,4 +46,3 @@ do
         echo "$package is already installed"
     fi
 done
-

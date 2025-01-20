@@ -27,7 +27,7 @@ VALIDATE(){
     fi
 }
 
-echo "Script Started Executing at $LOG_TIMESTAMP " &>>LOG_FILE_NAME
+echo "Script Started Executing at $TIMESTAMP " &>>LOG_FILE_NAME
 
 if [ $USERID -ne 0 ]
 then

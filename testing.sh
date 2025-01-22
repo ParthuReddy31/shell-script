@@ -37,16 +37,3 @@ then
     echo -e "$R The Provided $N $DESTINATION_DIRECTORY $R<-- Destination Directory Does Not Exist... Please Check.!$N"
     exit 1
 fi
-
-echo "Script started executing at: $TIMESTAMP" &>>$LOG_FILE_NAME
-
-FILES=$(find $SOURCE_DIRECTORY -name "*.log" -mtime +$DAYS)
-
-if [ -n "$FILES" ]
-then
-    echo "Files are: $FILES"
-    ZIP_FILE=$DESTINATION_DIRECTORY/app-logs-$TIMESTAMP
-    find $SOURCE_DIRECTORY -name "*.log" -mtime +$DAYS | zip -@ "$ZIP_FILE"
-else
-    echo "NO files found older than $DAYS"
-fi

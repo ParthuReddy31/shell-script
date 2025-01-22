@@ -6,7 +6,7 @@ Y="\e[33m"
 N="\e[0m"
 
 SOURCE_DIRECTORY=$1
-DESTINATION_DRIRECTORY=$2
+DESTINATION_DIRECTORY=$2
 DAYS=${3:-14}  # if user is not providing number of days, we are taking 14 as default
 
 LOGS_FOLDER="/home/ec2-user/shellscript-logs"
@@ -26,4 +26,14 @@ mkdir -p /home/ec2-user/shellscript-logs
 if [ $# -le 2 ];
 then
     USAGE
+fi
+
+if [ -d "$SOURCE_DIRECTORY"]
+then
+    echo -e "The Provided $SOURCE_DIRECTORY Source Directory DoecNot Exist... Please Check.!"
+fi
+
+if [ -d "$DESTINATION_DIRECTORY"]
+then
+    echo -e "The Provided $DESTINATION_DIRECTORY Source Directory DoecNot Exist... Please Check.!"
 fi

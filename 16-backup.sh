@@ -16,7 +16,7 @@ LOG_FILE_NAME="$LOGS_FOLDER/$LOG_FILE-$TIMESTAMP.log"
 
 USAGE(){
     #echo -e "$R USAGE:: $N sh 18-backup.sh <SOURCE_DIR> <DEST_DIR> <DAYS(Optional)>"
-    echo -e "$Y Entered command is wrong, please follow USAGE command style"
+    echo -e "$R Entered command is wrong, $Y Please follow USAGE command style$N"
     echo -e "$R USAGE:: $N backup <SOURCE_DIRECTORY> <DEST_DIRECTORY> <DAYS(Optional)>"
     exit 1
 }

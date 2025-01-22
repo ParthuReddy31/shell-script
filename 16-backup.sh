@@ -53,7 +53,7 @@ then
         while read -r file
         do
             echo "Deleting file:-> $file"
-            #rm -rf $file
+            rm -rf $file
         done <<< $FILES
     else
         echo -e "$R ERROR:: $Y Failed to create Zip File $N"

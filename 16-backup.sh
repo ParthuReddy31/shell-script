@@ -23,7 +23,7 @@ USAGE(){
 
 mkdir -p /home/ec2-user/shellscript-logs
 
-if [ $# -le 1 ];
+if [ $# -le 2 ];
 then
     USAGE
 fi

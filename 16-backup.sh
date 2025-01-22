@@ -35,4 +35,4 @@ then
 elif [ $# -lt 2 ];
 then
     $USAGE2
-if
+fi

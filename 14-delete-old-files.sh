@@ -41,3 +41,8 @@ echo "Script Started Executing at $TIMESTAMP " &>>LOG_FILE_NAME
 
 FILES_TO_DELETE=$(find $SOURCE_DIRECTORY -name "*.log" -mtime +14)
 echo "files to be Deleted: $FILES_TO_DELETE\n"
+
+while read -r file
+do
+    echo "Deleting file:-> $file"   
+done <<< $FILES_TO_DELETE

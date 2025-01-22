@@ -40,9 +40,10 @@ CHECK_ROOT(){
 echo "Script Started Executing at $TIMESTAMP " &>>LOG_FILE_NAME
 
 FILES_TO_DELETE=$(find $SOURCE_DIRECTORY -name "*.log" -mtime +14)
-echo "files to be Deleted: $FILES_TO_DELETE\n"
+echo "files to be Deleted: $FILES_TO_DELETE"
 
 while read -r file
 do
-    echo "Deleting file:-> $file"   
+    echo "Deleting file:-> $file"
+    rm -rf $file
 done <<< $FILES_TO_DELETE

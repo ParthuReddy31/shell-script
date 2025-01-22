@@ -30,12 +30,16 @@ fi
 
 if [ ! -d "$SOURCE_DIRECTORY" ]
 then
-    echo -e "$R The Provided $N $SOURCE_DIRECTORY $R<-- Source Directory DoecNot Exist... Please Check.!$N"
+    echo -e "$R The Provided $N $SOURCE_DIRECTORY $R<-- Source Directory Does Not Exist... Please Check.!$N"
     exit 1
 fi
 
 if [ ! -d "$DESTINATION_DIRECTORY" ]
 then
-    echo -e "$R The Provided $N $DESTINATION_DIRECTORY $R<-- Destination Directory DoecNot Exist... Please Check.!$N"
+    echo -e "$R The Provided $N $DESTINATION_DIRECTORY $R<-- Destination Directory Does Not Exist... Please Check.!$N"
     exit 1
 fi
+
+echo "Script started executing at: $TIMESTAMP" &>>$LOG_FILE_NAME
+
+FILES=$(find $SOURCE_DIRECTORY -name "*.log" -mtime $DAYS)

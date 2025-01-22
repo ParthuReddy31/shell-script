@@ -31,8 +31,8 @@ mkdir -p /home/ec2-user/shellscript-logs
 
 if [ $# -le 1 ]
 then
-    USAGE1
+    $USAGE1
 elif [ $# -lt 2 ]
 then
-    USAGE2
+    $USAGE2
 if

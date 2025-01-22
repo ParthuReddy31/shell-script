@@ -30,12 +30,12 @@ fi
 
 if [ ! -d "$SOURCE_DIRECTORY" ]
 then
-    echo -e "$R The Provided $SOURCE_DIRECTORY Source Directory DoecNot Exist... Please Check.!$N"
+    echo -e "$R The Provided $SOURCE_DIRECTORY <-- Source Directory DoecNot Exist... Please Check.!$N"
     exit 1
 fi
 
 if [ ! -d "$DESTINATION_DIRECTORY" ]
 then
-    echo -e "$R The Provided $DESTINATION_DIRECTORY Source Directory DoecNot Exist... Please Check.!$N"
+    echo -e "$R The Provided $DESTINATION_DIRECTORY <-- Destination Directory DoecNot Exist... Please Check.!$N"
     exit 1
 fi

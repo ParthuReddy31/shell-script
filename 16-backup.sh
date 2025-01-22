@@ -28,12 +28,14 @@ then
     USAGE
 fi
 
-if [ -d "$SOURCE_DIRECTORY"]
+if [ ! -d "$SOURCE_DIRECTORY"]
 then
     echo -e "The Provided $SOURCE_DIRECTORY Source Directory DoecNot Exist... Please Check.!"
+    exit 1
 fi
 
-if [ -d "$DESTINATION_DIRECTORY"]
+if [ ! -d "$DESTINATION_DIRECTORY"]
 then
     echo -e "The Provided $DESTINATION_DIRECTORY Source Directory DoecNot Exist... Please Check.!"
+    exit 1
 fi

@@ -48,5 +48,5 @@ if [ -n "$FILES" ]
 then
     echo "Files are: $FILES"
 else
-    echo "NO files found older than $Days"
+    echo "NO files found older than $DAYS"
 fi

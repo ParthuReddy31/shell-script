@@ -16,7 +16,7 @@ LOG_FILE_NAME="$LOGS_FOLDER/$LOG_FILE-$TIMESTAMP.log"
 
 USAGE(){
     #echo -e "$R USAGE:: $N sh 18-backup.sh <SOURCE_DIR> <DEST_DIR> <DAYS(Optional)>"
-    echo -e "$R Entered command is wrong, please follow USAGE command style"
+    echo -e "$Y Entered command is wrong, please follow USAGE command style"
     echo -e "$R USAGE:: $N backup <SOURCE_DIRECTORY> <DEST_DIRECTORY> <DAYS(Optional)>"
     exit 1
 }
@@ -30,12 +30,12 @@ fi
 
 if [ ! -d "$SOURCE_DIRECTORY" ]
 then
-    echo -e "The Provided $SOURCE_DIRECTORY Source Directory DoecNot Exist... Please Check.!"
+    echo -e "$R The Provided $SOURCE_DIRECTORY Source Directory DoecNot Exist... Please Check.!$N"
     exit 1
 fi
 
 if [ ! -d "$DESTINATION_DIRECTORY" ]
 then
-    echo -e "The Provided $DESTINATION_DIRECTORY Source Directory DoecNot Exist... Please Check.!"
+    echo -e "$R The Provided $DESTINATION_DIRECTORY Source Directory DoecNot Exist... Please Check.!$N"
     exit 1
 fi

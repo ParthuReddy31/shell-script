@@ -28,13 +28,13 @@ then
     USAGE
 fi
 
-if [ ! -d "$SOURCE_DIRECTORY" ]
+if [ ! -d $SOURCE_DIRECTORY ]
 then
     echo -e "$R The Provided $N $SOURCE_DIRECTORY $R<-- Source Directory Does Not Exist... Please Check.!$N"
     exit 1
 fi
 
-if [ ! -d "$DESTINATION_DIRECTORY" ]
+if [ ! -d $DESTINATION_DIRECTORY ]
 then
     echo -e "$R The Provided $N $DESTINATION_DIRECTORY $R<-- Destination Directory Does Not Exist... Please Check.!$N"
     exit 1
@@ -44,4 +44,9 @@ echo "Script started executing at: $TIMESTAMP" &>>$LOG_FILE_NAME
 
 FILES=$(find $SOURCE_DIRECTORY -name "*.log" -mtime +$DAYS)
 
-echo "files are: $FILES"
+if [ -n $FILES ]
+then
+    echo "Files are: $FILES"
+else
+    echo "NO files found older than $Days"
+fi
